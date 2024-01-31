@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --primary: #2947a9;
+  --button-background: #292e3d;
+  --lighter-text: #858ead;
+  --spacer-background: #e0e3eb;
+  --text-secondary-blue: #525b7a;
+  --text-secondary: #667299;
+  --button-orange:#f9995d;
+  --regular: 400;
+  font-family: "Work Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 65px;
+}
+
+/*! mixins */
+/*! utility classes  */
+.hover-mylink {
+  color: #14171f;
+  font-size: 0.8rem;
+}
+.hover-mylink:hover {
+  color: var(--button-orange) !important;
+}
+
+.rounded-card {
+  border-radius: 4px !important;
+}
+
+.rounded-card-2 {
+  border-radius: 2px !important;
+}
+
+.container {
+  max-width: 1150px;
+}
+
+.reputation-section h2 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 2px black;
+}
+
+.hover-card > .card,
+.hover-card > button,
+.hover-card > a {
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+.hover-card > .card:hover,
+.hover-card > button:hover,
+.hover-card > a:hover {
+  transform: translate(0, -2px) scale(1.1);
+  box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+}
+
+.card {
+  border-radius: 4px !important;
+}
+.card h5 {
+  font-weight: 700;
+}
+.card h6 {
+  font-weight: var(--regular);
+}
+
+.card-text-border {
+  border-left: 4px solid var(--button-orange);
+}
+
+.active {
+  padding-bottom: 10px;
+  border-left: none;
+  padding-left: 0px;
+  border-bottom: 4px solid var(--primary);
+}
+
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.inactive {
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+
+/*! hero section css */
+.hero-section {
+  background: url(../images/design/hero/hero.svg) no-repeat center;
+  background-size: cover;
+  height: 92vh;
+}
+.hero-section h1 {
+  left: 5%;
+  bottom: 10%;
+  font-weight: 600 !important;
+  font-size: 2.5rem !important;
+}
+.hero-section .navigation {
+  width: 310px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.hero-section .navigation-controls {
+  gap: 1px;
+}
+
+/*! services section */
+.services .spacer {
+  width: 20%;
+  height: 2px;
+  background-color: var(--spacer-background);
+}
+.services .card {
+  box-shadow: 0px 0px 37px -4px rgba(17, 24, 39, 0.05);
+}
+.services .card:nth-child(even) {
+  background-color: var(--primary);
+}
+.services .card:nth-child(even) h6 {
+  color: white;
+}
+.services .card:nth-child(odd) {
+  background-color: white;
+}
+.services .card:nth-child(odd) h6 {
+  color: var(--primary);
+}
+
+/*! consultation section */
+.consultation {
+  background: url(../images/design/consultation/freeconsultation.svg) no-repeat center;
+  background-size: cover;
+  padding: 30px;
+}
+.consultation div > button:hover {
+  background-color: white !important;
+  border: 2px solid white !important;
+  color: black !important;
+}
+
+/*! about us section */
+.about-us {
+  background: url(../images/design/aboutus/aboutus_hero.svg) no-repeat center;
+  background-size: cover;
+  width: 75%;
+  aspect-ratio: 4/3;
+}
+.about-us + div {
+  z-index: 5;
+}
+
+/*! experience section */
+.experience .card {
+  width: 15rem;
+  box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+}
+.experience .card h6 {
+  color: var(--button-background);
+}
+.experience .card h5 {
+  color: var(--text-secondary);
+}
+.experience .card:not(:last-child):nth-child(even) img {
+  top: -12%;
+  left: -10%;
+}
+.experience .card:nth-child(odd) img {
+  top: -15%;
+  right: -10%;
+}
+.experience .card:last-child img {
+  bottom: -15%;
+  right: -10%;
+}
+
+/*! projectt section */
+.project-wrapper > .card {
+  width: 380px;
+}
+
+/*! contact section */
+form {
+  max-width: 900px;
+}
+
+/*! footer section */
+.social-icons img:hover {
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+/*! global classes */
+.sm {
+  font-size: 11px;
+}
+
+.md {
+  font-size: 12px;
+}
+
+.lg {
+  font-size: 13px;
+}
+
+.xl {
+  font-size: 17px;
+}
+
+.xl2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--button-background);
+}
+
+.xl3 {
+  font-size: 40px;
+}
+
+.xl4 {
+  font-size: 45px;
+}
+
+.bg-myprimary {
+  background-color: var(--primary) !important;
+}
+
+.bg-mysecondary {
+  background-color: var(--button-background) !important;
+}
+
+.bg-alt {
+  background-color: #f6f8f7 !important;
+}
+
+.bg-orange {
+  background-color: var(--button-orange);
+}
+
+.font-mysecondary {
+  color: var(--button-background) !important;
+}
+
+.font-myprimary {
+  color: var(--primary) !important;
+}
+
+.font-lighter-variant {
+  color: var(--lighter-text) !important;
+}
+
+.font-secondary-blue {
+  color: var(--text-secondary-blue);
+}
+
+.logo-text {
+  font-weight: 700 !important;
+  color: var(--primary);
+}
+
+.fit-content {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/*! 768px */
+@media screen and (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 70px !important;
+  }
+  .hero-section .navigation {
+    right: 5%;
+    transform: translateX(0%);
+  }
+  .newsletter-input {
+    width: 250px;
+  }
+  .experience .card {
+    width: 16rem;
+  }
+  .experience .card:not(:last-child):nth-child(even) {
+    left: -50px;
+  }
+  .experience .card:not(:last-child):nth-child(even) img {
+    top: -15%;
+    left: -10%;
+  }
+  .experience .card:nth-child(odd) {
+    right: -50px;
+    z-index: 5;
+  }
+  .experience .card:nth-child(odd) img {
+    top: -15%;
+    right: -10%;
+  }
+  .experience .card:last-child {
+    left: -50px;
+  }
+  .experience .card:last-child img {
+    bottom: -15%;
+    right: -10%;
+  }
+  .active {
+    padding-left: 10px;
+    border-bottom: none;
+    padding-bottom: 0px;
+    border-left: 4px solid var(--primary);
+  }
+  .inactive {
+    padding-left: 10px;
+    padding-bottom: 0px;
+  }
+  .md {
+    font-size: 15px;
+  }
+  .lg {
+    font-size: 15px;
+  }
+  .xl {
+    font-size: 19px;
+  }
+  .xl2 {
+    font-size: 31px;
+    font-weight: bold;
+  }
+  .xl3 {
+    font-size: 55px;
+  }
+  .xl4 {
+    font-size: 67px;
+  }
+}
+/*! 992px */
+@media screen and (min-width: 992px) {
+  .about-us {
+    left: 8%;
+  }
+  .about-us + div {
+    right: 5%;
+  }
+}/*# sourceMappingURL=style.css.map */
