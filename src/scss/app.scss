@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   --primary: #2947a9;
   --button-background: #292e3d;
@@ -6,7 +7,7 @@
   --spacer-background: #e0e3eb;
   --text-secondary-blue: #525b7a;
   --text-secondary: #667299;
-  --button-orange:#f9995d;
+  --button-orange: #f9995d;
   --regular: 400;
   font-family: "Work Sans", sans-serif;
 }
@@ -27,6 +28,7 @@ html {
   color: #14171f;
   font-size: 0.8rem;
 }
+
 .hover-mylink:hover {
   color: var(--button-orange) !important;
 }
@@ -48,15 +50,16 @@ html {
   -webkit-text-stroke: 2px black;
 }
 
-.hover-card > .card,
-.hover-card > button,
-.hover-card > a {
+.hover-card>.card,
+.hover-card>button,
+.hover-card>a {
   cursor: pointer;
   transition: transform 200ms ease;
 }
-.hover-card > .card:hover,
-.hover-card > button:hover,
-.hover-card > a:hover {
+
+.hover-card>.card:hover,
+.hover-card>button:hover,
+.hover-card>a:hover {
   transform: translate(0, -2px) scale(1.1);
   box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
 }
@@ -64,9 +67,11 @@ html {
 .card {
   border-radius: 4px !important;
 }
+
 .card h5 {
   font-weight: 700;
 }
+
 .card h6 {
   font-weight: var(--regular);
 }
@@ -99,17 +104,20 @@ html {
   background-size: cover;
   height: 92vh;
 }
+
 .hero-section h1 {
   left: 5%;
   bottom: 10%;
   font-weight: 600 !important;
   font-size: 2.5rem !important;
 }
+
 .hero-section .navigation {
   width: 310px;
   right: 50%;
   transform: translateX(50%);
 }
+
 .hero-section .navigation-controls {
   gap: 1px;
 }
@@ -120,18 +128,23 @@ html {
   height: 2px;
   background-color: var(--spacer-background);
 }
+
 .services .card {
   box-shadow: 0px 0px 37px -4px rgba(17, 24, 39, 0.05);
 }
+
 .services .card:nth-child(even) {
   background-color: var(--primary);
 }
+
 .services .card:nth-child(even) h6 {
   color: white;
 }
+
 .services .card:nth-child(odd) {
   background-color: white;
 }
+
 .services .card:nth-child(odd) h6 {
   color: var(--primary);
 }
@@ -142,7 +155,8 @@ html {
   background-size: cover;
   padding: 30px;
 }
-.consultation div > button:hover {
+
+.consultation div>button:hover {
   background-color: white !important;
   border: 2px solid white !important;
   color: black !important;
@@ -155,7 +169,8 @@ html {
   width: 75%;
   aspect-ratio: 4/3;
 }
-.about-us + div {
+
+.about-us+div {
   z-index: 5;
 }
 
@@ -164,27 +179,32 @@ html {
   width: 15rem;
   box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
 }
+
 .experience .card h6 {
   color: var(--button-background);
 }
+
 .experience .card h5 {
   color: var(--text-secondary);
 }
+
 .experience .card:not(:last-child):nth-child(even) img {
   top: -12%;
   left: -10%;
 }
+
 .experience .card:nth-child(odd) img {
   top: -15%;
   right: -10%;
 }
+
 .experience .card:last-child img {
   bottom: -15%;
   right: -10%;
 }
 
 /*! projectt section */
-.project-wrapper > .card {
+.project-wrapper>.card {
   width: 380px;
 }
 
@@ -278,74 +298,95 @@ form {
   .hero-section h1 {
     font-size: 70px !important;
   }
+
   .hero-section .navigation {
     right: 5%;
     transform: translateX(0%);
   }
+
   .newsletter-input {
     width: 250px;
   }
+
   .experience .card {
     width: 16rem;
   }
+
   .experience .card:not(:last-child):nth-child(even) {
     left: -50px;
   }
+
   .experience .card:not(:last-child):nth-child(even) img {
     top: -15%;
     left: -10%;
   }
+
   .experience .card:nth-child(odd) {
     right: -50px;
     z-index: 5;
   }
+
   .experience .card:nth-child(odd) img {
     top: -15%;
     right: -10%;
   }
+
   .experience .card:last-child {
     left: -50px;
   }
+
   .experience .card:last-child img {
     bottom: -15%;
     right: -10%;
   }
+
   .active {
     padding-left: 10px;
     border-bottom: none;
     padding-bottom: 0px;
     border-left: 4px solid var(--primary);
   }
+
   .inactive {
     padding-left: 10px;
     padding-bottom: 0px;
   }
+
   .md {
     font-size: 15px;
   }
+
   .lg {
     font-size: 15px;
   }
+
   .xl {
     font-size: 19px;
   }
+
   .xl2 {
     font-size: 31px;
     font-weight: bold;
   }
+
   .xl3 {
     font-size: 55px;
   }
+
   .xl4 {
     font-size: 67px;
   }
 }
+
 /*! 992px */
 @media screen and (min-width: 992px) {
   .about-us {
     left: 8%;
   }
-  .about-us + div {
+
+  .about-us+div {
     right: 5%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
